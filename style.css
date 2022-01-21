@@ -1,0 +1,33 @@
+/* .container{
+display: flex;
+width: 100px;
+height: 100px;
+
+}
+
+.avatar{
+    background-color: aquamarine;
+    border: 50%;
+
+}
+
+.avtarImg{
+
+    height: 200px;
+    width: 200px;
+} */
+
+.avatar {
+    /* Rounded border */
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+
+.avatar__image {
+    /* Rounded border */
+    border-radius: 50%;
+
+    /* Take full size */
+    height: 100px;
+    width: 100px;
+}
