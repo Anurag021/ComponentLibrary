@@ -1,33 +1,119 @@
-/* .container{
+.container{
 display: flex;
-width: 100px;
-height: 100px;
-
+flex-wrap: wrap;
 }
 
 .avatar{
     background-color: aquamarine;
-    border: 50%;
-
+    border-radius: 50%;
+    height:80px;
+    width:80px;
 }
 
 .avtarImg{
-
-    height: 200px;
-    width: 200px;
-} */
-
-.avatar {
-    /* Rounded border */
-    border-radius: 50%;
-    background-color: aquamarine;
-}
-
-.avatar__image {
-    /* Rounded border */
     border-radius: 50%;
 
-    /* Take full size */
-    height: 100px;
-    width: 100px;
+   height:100%;
+   width:100%;
+} 
+
+/* -------------------Alert-------------------- */
+
+.alert {
+    padding: 10px;
+    background-color: #f58e87;
+    color: white;
+    width: 400px;
+    border-radius: 20px;
+  }
+  
+.closebtn {
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 29px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+  
+.closebtn:hover {
+    color: black;
+  }
+
+  /* -------Icons--------- */
+  .icons{
+      display: flex;
+      justify-content: space-evenly;
+      padding: 15px;
+      cursor: pointer;
+  }
+
+  .icons :hover{
+      color: #c4160a;
+  }
+
+
+  /* -----------------SnackBar--------- */
+
+  #snackbaree {
+     /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: rgb(158, 31, 31); /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  }
+  
+  .snackbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #ce271b;
+    width: 350px;
+    border-radius: 15px;
+    z-index: 1;
+    position: fixed;
+    bottom: 30px;
+    left: 38%;
+
+    /* margin-left: 30%; */
+  }
+  .content{
+      margin-left: 20px;
+  }
+  .snackbarBtn{
+    align-items: center;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: 15px;
+  }
+
+/* ------------Badge------------------- */
+
+/* Create Your Own Badge */
+
+.badgeContainer{
+    display: flex;
+    justify-content: center;
 }
+
+.badge{
+    position:relative;
+    color:cornsilk;
+    background: brown;
+    border-radius: 50%;
+    padding: 5px 10px;
+    top: -16px  ;
+    right: 15px;
+    /* margin-top: -20px;
+    margin-left: 30px; */
+    font-size: small;
+}
+
+
+
