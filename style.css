@@ -11,8 +11,7 @@ flex-wrap: wrap;
 }
 
 .avtarImg{
-    border-radius: 50%;
-
+   border-radius: 50%;
    height:100%;
    width:100%;
 } 
@@ -98,6 +97,7 @@ flex-wrap: wrap;
 /* Create Your Own Badge */
 
 .badgeContainer{
+  margin-top: 50px;
     display: flex;
     justify-content: center;
 }
@@ -116,4 +116,28 @@ flex-wrap: wrap;
 }
 
 
+/* -----------------Buttons-------------- */
+.buttons{
 
+}
+
+.primaryButton{
+  background-color: brown;
+  color: azure;
+  padding:7px;
+  border:2px solid rgb(10, 10, 10);
+  cursor: pointer;
+}
+
+.linkButton{
+  background-color: brown;
+  color: azure;
+  padding:7px;
+  border:2px solid rgb(10, 10, 10);
+  cursor: pointer;
+}
+
+.iconButton span{
+  font-size: xx-large;
+  margin-left: 25px;
+}
