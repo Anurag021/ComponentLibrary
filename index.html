@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="avatar">
@@ -53,7 +55,7 @@
 
     <!-- -------------Badge on Icon---------- -->
 
-      <!-- <a href="#" class="notification">
+    <!-- <a href="#" class="notification">
         <span class="material-icons"> email </span>
         <span class="badge">3</span>
     </a> -->
@@ -72,15 +74,15 @@
     <div class="buttons">
         <button class="primaryButton">Button</button>
         <a href="https://google.com"><button class="linkButton">Go To Google</button></a>
-        <a class = "iconButton" href="https://google.com"><span class="material-icons">travel_explore</span></a>
+        <a class="iconButton" href="https://google.com"><span class="material-icons">travel_explore</span></a>
     </div>
     <!-- Floating Button To be done link down -->
     <!-- https://javascript.plainenglish.io/how-to-create-a-floating-action-button-with-pure-css-positioning-e52ba498083f -->
     <div class="fabContainer">
-        <div class="button fabIcons">
+        <div class="fabButton fabIcons">
             <span class="material-icons">add</span>
         </div>
-        <ul class="options">
+        <ul class="fabOptions">
             <li>
                 <span class="iconLabel">Facebook</span>
                 <div class="fabIcons">
@@ -106,7 +108,88 @@
                 </div>
             </li>
         </ul>
-    </div>   
-      
+    </div>
+
+    <!-- ---------------Cards With Badges------------------- -->
+    <div class="cards">
+        <div class="card1">
+            <div class="card1Header">
+                <div class="car1About">
+                    <h2>Kedarkantha</h2>
+                    <h3>Trekking In Uttarakhand</h3>
+                </div>
+                <img src="Images/KedarkanthaView.jpg" alt="kedarkantha_Image" class="card1Img">
+            </div>
+            <div class="card1Body">
+                <p>
+                    One of the most popular winter treks in Uttarakhand,Covered in sparkling snow during winters, this
+                    trek offers breathtaking view of the majestic Himalayan peaks.
+                </p>
+            </div>
+            <div class="card1Footer">
+                <button class="action">Read</button>
+                <button class="action">Bookmark</button>
+                <button><span class="material-icons">favorite_border</span></button>
+                <button><span class="material-icons">share</span></button>
+                <button><span class="material-icons">more_vert </span></button>
+            </div>
+        </div>
+
+        <!-- ----Cards With Dismay----- -->
+
+        <div class="card1">
+            <span class="closeCard">X</span>
+            <div class="card1Header">
+                <div class="car1About">
+                    <h2>Kedarkantha</h2>
+                    <h3>Trekking In Uttarakhand</h3>
+                </div>
+                <img src="Images/KedarkanthaView.jpg" alt="kedarkantha_Image" class="card1Img">
+            </div>
+            <div class="card1Body">
+                <p>
+                    One of the most popular winter treks in Uttarakhand,Covered in sparkling snow during winters, this
+                    trek offers breathtaking view of the majestic Himalayan peaks.
+                </p>
+            </div>
+            <div class="card1Footer">
+                <button class="action">Read</button>
+                <button class="action">Bookmark</button>
+                <button><span class="material-icons">favorite_border</span></button>
+                <button><span class="material-icons">share</span></button>
+                <button><span class="material-icons">more_vert </span></button>
+            </div>
+        </div>
+
+        <!-- --------Card with text overlay-------- -->
+        <div class="card3">
+            <img src="Images/KedarkanthaView.jpg" class="card3Img">
+            <div class="cardOverlay">
+                <div class="overlayText">
+                    <h2>Trekking In Uttrakhand</h2>
+                    <h3>Plan Your next Trek</h3>
+                    <a href="#" class="cardOverlayButton">Explore Treks</a>
+                </div>
+
+            </div>
+        </div>
+        <!-- ---- Text Only Cards------- -->
+        <div class="card4">
+            <h2>CSS</h2>
+            <h3 class="card4SubHeading">Cascading Style sheet</h3>
+            <p>CSS (Cascading Style Sheets) allows you to create great-looking web pages, but how does it work under the
+                hood? This article explains what CSS is, with a simple syntax example, and also covers some key terms
+                about the language.
+            </p>
+            <div class="card4Footer">
+                <button class="action">Continue Reading</button>
+                <button class="action">Explore JS</button>
+            </div>
+        </div>
+
+        <!-- ---------Horizontal Cards------ -->
+    </div>
+    <script src="app.js"></script>
 </body>
+
 </html>

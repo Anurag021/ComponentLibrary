@@ -117,7 +117,6 @@ flex-wrap: wrap;
 
 /* ----------Floating Action Button------ */
 .fabContainer{
-  background-color: aquamarine;
   bottom:50px;
   right: 50px;
   position: fixed;
@@ -136,7 +135,7 @@ flex-wrap: wrap;
   
 }
 
-.button{
+.fabButton{
   background-color: brown;
   width: 60px;
   height: 60px;
@@ -151,14 +150,16 @@ flex-wrap: wrap;
   color: beige;
 }
 
-.options{
+.fabOptions{
   list-style-type: none;
   position: absolute;
   bottom:70px;
   right: 0;
+  visibility: collapse;
+  
 }
 
-.options li{
+.fabOptions li{
   display:flex;
   justify-content:flex-end;
   padding:10px;
@@ -172,3 +173,178 @@ flex-wrap: wrap;
   color: white;
   border-radius: 3px;
 }
+/* -----------Cards With Badges----------------------------- */
+.cards{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card1{
+  background-color: rgb(241, 202, 202);
+  width:350px;
+  height: 300px;
+  /* margin:auto; */
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap:wrap;
+  float: left;
+  position: relative;
+}
+.card1Header{
+  display: flex;
+  width: 400px;
+  height: 70px;
+  justify-content: space-around;
+}
+.card1About{
+  display: flex;
+  flex-direction: column;
+  margin-left:30px;
+  padding: 10px;
+}
+.car1About h3{
+  color: rgba(94, 91, 91, 0.822);
+}
+.card1Body{
+  padding:10px;
+}
+.card1Body p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card1Footer{
+  display: flex;
+  width:350px;
+  justify-content: space-between;
+  padding: 10px;
+}
+.card1Footer button{
+  background-color: transparent;
+  border: none;
+  font-size: large;
+  color:rgb(64, 99, 163);
+}
+.card1Header img{
+  margin-top: 20px;
+  width: 100px;
+  height: 80px;
+}
+.card1Footer .material-icons {
+  color:rgb(64, 99, 163);
+}
+
+.card1::before{
+  position: absolute;
+  content: "#Trending";
+  background: #3949ab;
+  top:10px;
+  right: 100px;
+  width: 80px;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+/* ----- Cards With Dismay---------- */
+
+.closeCard{
+  position: absolute;
+  background-color: rgb(102, 24, 11);
+  color: #3949ab;
+  border-radius: 50%;
+  top:2px;
+  padding: 2px 5px;
+  color: beige;
+  cursor: pointer;
+  right: 10px;
+
+}
+
+/* -----Cards With Text Overlay---------------- */
+
+
+.card3{
+  background-color: rgb(241, 202, 202);
+  width:350px;
+  height: 300px;
+  /* margin:auto; */
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap:wrap;
+  float: left;
+  position: relative;
+}
+
+.card3Img{
+  width: 350px;
+  height: 300px;
+  
+}
+.cardOverlay{
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  /* transition: .5s ease; */
+  background-color: #1f0606; 
+
+}
+
+.overlayText{
+  color: rgb(156, 228, 250);
+  margin-left: 40px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardOverlayButton{
+  background-color: rgb(151, 4, 4);
+  color: white;
+  height: 20px;
+  width:95px;
+  padding: 3px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.card3:hover .cardOverlay{
+  opacity: 0.85;
+}
+
+/* ---- Text Only Cards------- */
+
+.card4{
+  background-color: rgb(241, 202, 202);
+  margin-top: 100px;
+  width:300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  border:20px black groove;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card4Footer .action{
+  background-color: maroon;
+  color: beige;
+  padding: 5px;
+  border: none;
+}
+.card4 h2{
+  margin:0px;
+}
+.card4 h3{
+  margin:0px;
+  padding: 5px;
+}
+
+/* ---------Horizontal Cards------ */
+
