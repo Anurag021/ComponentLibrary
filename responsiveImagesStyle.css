@@ -1,0 +1,35 @@
+.responsiveImages{
+    color: brown;
+}
+
+.backgroundImg{
+    width: 50%;
+    height: auto;
+
+}
+
+.backImg{
+    width: 50%;
+    height:400px;
+    background-repeat: no-repeat;
+    background-image: url('Images/BackgroundWall.jpg');
+    background-size: contain;
+    border: 2px solid rgb(71, 8, 8);
+    background-size: cover;
+}
+
+/* -- for width 500px and smaller */
+@media only screen and (max-width:500px){
+    .backImg{
+        background-image: url('Images/KedarkanthaView.jpg');
+        width: 50%;
+        height:400px;
+    }
+}
+/* Round Image */
+.roundImg{
+    width: 30%;
+    height: 300px;
+    border: 5px solid rgb(26, 3, 3) ;
+    border-radius: 50%;
+}
