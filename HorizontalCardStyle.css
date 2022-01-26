@@ -176,7 +176,9 @@
   font-size: 0.9em;
 } */
 
-.card5{
+/* Uncomment from here */
+
+/* .card5{
     background-color: burlywood;
 }
 
@@ -203,4 +205,55 @@
 
 .card5ContactInfo{
 
+} */
+
+/* ---------------------Over Lapping Card---------------- */
+/* ------------------Need to work on this one-------------- */
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+  margin: 24px;
+}
+img {
+  border-radius: 4px;
+}
+.card6{
+  font-family: monospace;
+  padding: 16px;
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  width: 200px;
+  display: grid;
+}
+
+.content{
+  display: inline-flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  color: white;
+  font-size: 0.8rem;
+  box-sizing: border-box; 
+}
+
+.content,
+.background {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+
+.tag{
+  margin: 0.5rem;
+  grid-area: 1/-1;
+  background-color: blue;
+  align-self: flex-start;
+  justify-self: end;
+  padding: 8px;
+  border-radius: 2px;
 }
