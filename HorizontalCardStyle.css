@@ -247,6 +247,10 @@ img {
   grid-row: 1/2;
 }
 
+/* Here we have said that the content and background 
+have the same placement on grid hence overlapping is acheived
+also we can use stacking index(z index) in case we want anyone on top of other */
+
 
 .tag{
   margin: 0.5rem;
